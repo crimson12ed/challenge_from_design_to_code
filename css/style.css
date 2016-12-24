@@ -1,0 +1,137 @@
+body * {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+nav {
+	position: fixed;
+	width: 100%;
+	padding: 10px 40px 10px 40px;
+	background-color: LightGrey;
+	box-sizing: border-box;
+	z-index: 1;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav a {
+	color: SlateBlue;
+}
+
+.brand, .navigation {
+	display: inline-block;
+	font-size: 24px;
+	vertical-align: middle;
+}
+
+.navigation {
+	float: right;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.navigation > li {
+	display: inline;
+	margin-left: 16px;
+	color: SlateBlue;
+}
+
+ {
+	margin-top: 100px;
+}
+
+.section {
+	margin-bottom: 30px;
+}
+
+.section::before, .section::after  {
+	display: table;
+	content: " ";
+}
+
+.section::after, .section::after {
+	clear: both;
+}
+
+/* Content */
+.content {
+	margin: 100px 120px 0px 120px;
+	position: absolute;
+}
+
+input, button {
+	border-radius: 5px;
+	border: 1px solid LightGray;
+	vertical-align: top;
+}
+
+input[type="text"] {
+	width: 400px;
+	height: 30px;
+	margin-bottom: 40px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+button {
+	border-radius: 5px;
+	padding: 0;
+	background-color: white;
+	padding: 1px 3px 0px 3px;
+}
+
+button > img {
+	height: 23px;
+}
+
+.button-group > button {
+	display: block;
+    float:left;
+	padding: 12px 18px 12px 18px;
+	margin: 0;
+}
+
+.button-group > button:first-child {
+	border-top-right-radius: 0%;
+	border-bottom-right-radius: 0%;
+}
+
+.button-group > button:last-child {
+	border-top-left-radius: 0%;
+	border-bottom-left-radius: 0%;
+	border-left: 0;
+
+}
+
+.button-group > button:not(:first-child):not(:last-child) {
+	border-radius: 0;
+	border-left: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/* Page List */
+.page-list {
+	display: block;
+}
+
+.page-list ul {
+	list-style: none;
+	padding: 0;
+	color: gray;
+}
+
+.page-list li {
+	margin-bottom: 15px;
+}
+
+.job-title {
+	font-size: 1.125em;
+	font-color: blue;
+	font-weight: bold;
+	padding-left: 0.875em;
+	padding-right: 0.875em;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Layout Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="author" href="humans.txt">
+  </head>
+  <body>
+  	<nav>
+  		<a class="brand">Greg's List</a>
+  		<ul class="navigation">
+  			<li><a href="#">Post</a></li>
+  			<li><a href="#">Account</a></li>
+  		</ul>
+  	</nav>
+
+		<div class="content">
+			<main>
+				<!-- Search Bar -->
+				<form class="search">
+					<input type="text" placeholder="Search software jobs">
+					<button type="submit"><img src="img/magnifying-glass.png" ></button>
+				</form>
+
+
+				<!-- Page Navigation -->
+				<div class="section button-group">
+					<button>&lt; prev</button>
+					<button class="page-number">1 to 100 of 179</button>
+					<button>next &gt;</button>
+				</div>
+
+				<!-- Page List -->
+				<div class="section page-list">
+					<ul>
+						<li>June 22 <a class="job-title" href="#">Technical Project Manager</a> Midtown East</li>
+						<li>June 21 <a class="job-title" href="#">Frontend Developer</a> SoHo</li>
+						<li>June 20 <a class="job-title" href="#">Senior Python Developer / Cofounder</a> Flatiron</li>
+					</ul>
+				</div>
+
+			</main>
+		</div>
+  </body>
+</html>
